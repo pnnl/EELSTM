@@ -1,92 +1,95 @@
-# Multimodal Few Shot Small
+# EELSTM: Time Series Prediction on Electron Energy Loss Spectra
 
+## Table of Contents
 
+- [Program Detail](#program-detail)
+- [Requirements](#requirements)
+- [Installation](#installation)
+  * [Download Git Repository](#download-git-Repository)
+  * [Create environment](#create-environment)
+  * [Install required packages](#install-required-packages)
+  * [Relaunch](#relaunch)
+- [Web Interface](#web-interface)
+- [Data](#data)
+- [Group Members](#group-members)
+- [Contact Information](#contact-information)
+- [Acknowledgments](#acknowledgments)
+- [Usage License](#usage-license)
 
-## Getting started
+## Program Detail
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+This is the repository of DIRECT Capstone program, supported by the Data Intensive Research Enabling Clean Technology (DIRECT) National Science Foundation (NSF) National Research Traineeship (DGE-1633216), the State of Washington through the University of Washington (UW) Clean Energy Institute and the UW eScience Institute. 
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+## Requirements
 
-## Add your files
-
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
-
-```
-cd existing_repo
-git remote add origin https://gitlab.pnnl.gov/joecool/multimodal-few-shot-small.git
-git branch -M main
-git push -uf origin main
-```
-
-## Integrate with your tools
-
-- [ ] [Set up project integrations](https://gitlab.pnnl.gov/joecool/multimodal-few-shot-small/-/settings/integrations)
-
-## Collaborate with your team
-
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
-
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+You need to either download our GUI project or jupyter notebook under `working notebook` path to use our production. Please follow the installation steps.
 
 ## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+For user familiar with the command line:
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+### Download Git Repository
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+1. `cd <replace with location of project folder>`
+2. `git clone https://github.com/Yjin232/PNNL_LSTM_GROUP.git`
+3. `cd GUI`
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+### Create environment
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+For Mac users:
+1. `python3 -m venv env`
+2. `source env/bin/activate`
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+For Windows users:
+1. `virtualenv env`
+2. `\path\to\env\Scripts\activate`
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+For Pycharm users:
+1. Open the project under the `GUI` root
+2. Click the `install the requirements.txt` button
 
-## License
-For open source projects, say how it is licensed.
+### Install required packages
+Make sure your device could run the `PyTroch` and `Keras`
+1. `cd GUI`
+2. `pip install -r requirements.txt`
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+### Relaunch
+
+To reactivate environment:
+1. `source env/bin/activate` #if have mac
+2. `\path\to\env\Scripts\activate` #if have windows
+3. `cd to GUI folder`
+4. `python app.py`
+
+- For ease of use a demo video has been included in the repository under `GUI Demo`
+
+## Web Interface
+
+Our GUI is based on Flask version == 2.0.1 and we integrated two main functions in it, one is few-shot machine learing for image segmentation and feature classification in transmission electron microscopy (TEM), see detail in `pychip_gui` Repository Link: https://github.com/pnnl/pychip_gui.
+
+Another is for LSTM time series prediction for STEM spectrum, more details are given in the associated manuscript.
+![image](https://github.com/Yjin232/PNNL_LSTM_GROUP/blob/main/sample.png)
+
+* Data Import: The GUI only accpet STEM specturm data in .dm4 format, the data file should contain a singal part and raw data on different time series.
+
+* Specturm Visualization & Model Choose: The GUI would visualize the spectrum in time series and could control by a slider bar, try drag the silder bar to see the spectrum change in different time step. In this page, you also need to choose the dwell time for your STEM specturm data, and then click the submit button.
+
+* Prediction Display: The GUI provides the final prediction graph which includes the prediction, real one and the input sequence, also the Mean Sqaure Error(MSE) for the prediction evaluation. Try downloading the chart by clicking the `download` button.
+
+* Prediction History: The GUI provides a learing history page to keep the track of the results of prediction, use `detail` button to download the results and `delete` button to delete the results.
+
+## Data
+
+- Our STEM Spectrum data is under the `Data` folder, all of the specturms were under the condition: 0.1 eV, Point Scan 0.8 seconds with 0.08 - 0.8s dwell time. 
+
+## Group Members
+
+- University of Washington DIRECT Capstone Program Students: Nicholas Lewis, Yicheng Jin, Xiuyu Tang
+- Pacific Northwest National Laboratory: Steven Spurgeon, Sarah Akers, Christina Doty
+
+## Contact Infomation
+
+## Acknowledgments
+
+## Usage License
+

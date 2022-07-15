@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+{% block content %}
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- CSS -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="../../static/jquery/global_utils.js" type="text/javascript"></script>
+
+
+<main>
+    <center>
+        <h1>Results for LSTM model</h1>
+    </center>
+    <div id="map"></div>
+    <br>
+
+    <form class="form-horizontal" style="text-align: center;" action="{{ url_for('download', foldername = "result", filename=picture) }}">
+        <div class="box-body">
+            <div class="form-group">
+                MSE:<input type="text" id="textInput2" readonly value="{{ mse }}">
+                <input type="submit" value="Download Image" />
+            </div>
+        </div>
+    </form>
+
+
+
+    <script>
+        //using the dim passed on via app.py
+        var dim = {{ dim|  tojson}}
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='javascript/lstm_model.js') }}"></script>
+
+
+
+</main>
+
+{% endblock %}

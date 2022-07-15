@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<main>
+
+    <h1 align="center">Hello,{{ current_user.username }}! Upload Your STEM Image </h1>
+    <div class = "container">
+        <div class = "row"></div>
+        <div class = "row"></div>
+        <center><h2>Select A File To Upload</h2></center>
+        <center><form action = "http://localhost:5000/grid_select" method = "POST" enctype = "multipart/form-data">
+            <input type = "file" name = "file" class = "form-control" autocomplete="off" required>
+            <input type = "submit" value = "Submit" class="btn btn-info">
+        </form></center>
+    </div>
+</main>
+{% endblock %}
+

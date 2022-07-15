@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<main>
+    <center><h1>Hi, {{ current_user.username }}! please upload your .dm4 file</h1></center>
+    <div class = "container">
+        <div class = "row"></div>
+        <div class = "row"></div>
+        <center><h2>Select A File To Upload</h2></center>
+        <center><form action = "{{ url_for('create_time_step') }}" method = "POST" enctype = "multipart/form-data">
+            <input type = "file" name = "file" class = "form-control" autocomplete="off" required>
+            <input type = "submit" value = "Submit" class="btn btn-info">
+        </form></center>
+    </div>
+
+</main>
+{% endblock %}

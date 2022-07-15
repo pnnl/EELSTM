@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../static/css/styles.css">
+
+    <!-- title -->
+    <title>About pyCHIP</title>
+
+    <!--  JS   -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.0.0/d3.min.js"></script>
+  </head>
+
+
+    <body>
+        <div class="wrapper">
+            <!-- replace the current pnnl logo with pychip logo -->
+            <div class="sidebar">
+                <h2>pyCHIP</h2>
+
+                <ul class="nav navbar-nav navbar-right">
+                    {% for item in nav.side %}
+                    <li><a href="{{item.url}}">{{item.label}}</a></li>
+                    {% endfor %}
+
+					{% if current_user.is_anonymous %}
+						<li><a href="{{ url_for('login') }}">Login</a></li>
+					{% else %}
+						<li><a href="{{ url_for('logout') }}">Logout</a></li>
+					{% endif %}
+				</ul>
+            </div>
+            {% block content %}
+            {% endblock %}
+        </div>
+    </body>
+</html>

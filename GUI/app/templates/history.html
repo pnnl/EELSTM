@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+{% block content %}
+<main>
+    <link rel="stylesheet" href="../../static/css/bootstrap.css">
+    <h1>Learning History</h1>
+    <div class="container">
+        <div class="col-md-12">
+            <div class="panel panel-danger">
+                <div class="panel-heading">
+                    Learning History
+                    <a href="" type="button" class="btn btn-warning btn-sm" style="width:60px;float:center">Fresh</a>
+                </div>
+                <table class="table table-striped">
+                        <tr>
+                            <th>Type</th>
+                            <th>Time</th>
+                            <th>File Name</th>
+                            <th>Result</th>
+                            <th>Manipulation</th>
+                        </tr>
+                        {% for file in file_dict %}
+                        <tr>
+                            <td>LSTM</td>
+                            <td>{{file_dict[file].date}}</td>
+                            <td>{{file_dict[file].file}}</td>
+                            <td>{{file_dict[file].result}}</td>
+                            <td>
+                                <a href="{{ url_for('showDetail',filename=file_dict[file].file) }}" type="button" class="btn btn-warning btn-xs" style="width:60px;float:center">Detail</a>
+                                <a href="{{ url_for('delete',filename=file_dict[file].file) }}" type="button" class="btn btn-warning btn-xs" style="width:60px;float:center">Delete</a>
+                            </td>
+                        {% endfor %}
+                </table>
+
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}
