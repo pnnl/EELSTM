@@ -64,6 +64,7 @@ To reactivate environment:
 Our graphical user interface (GUI) is based on Flask version == 2.0.1 and we integrated the EELSTM model functionality, in addition to interfacing with our existing few-shot machine learning code pyChip (https://github.com/pnnl/pychip_gui).
 
 An overview image of the interface is shown below, encompassing four steps:
+
 ![image](Docs/GUI.png)
 
 * Data Import: The GUI only accepts STEM spectrum data in *.dm4 format; the data file should contain a singal part and raw data time series.
@@ -73,8 +74,6 @@ An overview image of the interface is shown below, encompassing four steps:
 * Forecast Display: The GUI then provides the final prediction graph which includes the forecast, input sequences, ground truth data (if available), and mean squared error (MSE).
 
 * Forecast History: The GUI also provides a learing history page to keep the track of the results of predictio. The user can select the `detail` button to download the results and `delete` button to delete the results.
-
-![workflow](Docs/GUI.png)
 
 ## Data
 
