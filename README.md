@@ -1,4 +1,4 @@
-EELSTM: Forecasting of Electron Energy Loss Spectroscopy Data
+EELSTM: Forecasting of In Situ Electron Energy Loss Spectroscopy Data
 =====
 
 Program Overview
