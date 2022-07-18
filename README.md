@@ -61,14 +61,14 @@ To reactivate environment:
 
 ## Graphical User Interface
 
-Our graphical user interface (GUI) is based on Flask version == 2.0.1 and we integrated the EELSTM model functionality, in addition to interfacing with our existing few-shot machine learning code pyChip (https://github.com/pnnl/pychip_gui.)
+Our graphical user interface (GUI) is based on Flask version == 2.0.1 and we integrated the EELSTM model functionality, in addition to interfacing with our existing few-shot machine learning code pyChip (https://github.com/pnnl/pychip_gui).
 
 An overview image of the interface is shown below, encompassing four steps:
 ![image](Docs/GUI.png)
 
 * Data Import: The GUI only accepts STEM spectrum data in *.dm4 format; the data file should contain a singal part and raw data time series.
 
-* Specturm Visualization & Model Selection: The user can then visualize the spectrum in time series and control sampling via a dynamic slider. In this page, the user should choose the dwell and model parameters.
+* Spectrum Visualization & Model Selection: The GUI can then visualize the spectrum in time series and control sampling via a dynamic slider. In this page, the user should choose the dwell and other model parameters.
 
 * Forecast Display: The GUI then provides the final prediction graph which includes the forecast, input sequences, ground truth data (if available), and mean squared error (MSE).
 
@@ -83,9 +83,13 @@ The data used in our study is availble on Figshare at: https://doi.org/10.6084/m
 How to Cite
 ======
 
-If you would like to use this code, we request that you please cite our Arxiv preprint:
+If you would like to use this code, we request that you please cite our Arxiv preprint: X
 
-X
+To learn more about the application of few-shot ML to electron microscopy data, please consult our following publications:
+
+ • Doty, C., Gallagher, S., Cui, W., Chen, W., Bhushan, S., Oostrom, M., Akers, S., & Spurgeon, S. R. (2022). Design of a Graphical User Interface for Few-Shot Machine Learning Classification of Electron Microscopy Data. Computational Materials Science, 203, 111121. [https://doi.org/10.1016/j.commatsci.2021.111121]
+ 
+ • Akers, S., Kautz, E., Trevino-Gavito, A., Olszta, M., Matthews, B. E., Wang, L., Du, Y., & Spurgeon, S. R. (2021). Rapid and flexible segmentation of electron microscopy data using few-shot machine learning. npj Computational Materials, 7(1), 187. [https://doi.org/10.1038/s41524-021-00652-z]
 
 Contact Information
  ======================
@@ -102,7 +106,7 @@ Contact Information
 Acknowledgments
 ======================
 
-The authors would like to thank Dr. Jenna Pope for reviewing the model. C.D., B.E.M., S.A., and S.R.S. were supported by the Chemical Dynamics Initiative/Investment, under the Laboratory Directed Research and Development (LDRD) Program at Pacific Northwest National Laboratory (PNNL). PNNL is a multi-program national laboratory operated for the U.S. Department of Energy (DOE) by Battelle Memorial Institute under Contract No. DE-AC05-76RL01830. Experimental sample preparation was performed at the Environmental Molecular Sciences Laboratory (EMSL), a national scientific user facility sponsored by the Department of Energy's Office of Biological and Environmental Research and located at PNNL. EELS data was collected in the Radiological Microscopy Suite (RMS), located in the Radiochemical Processing Laboratory (RPL) at PNNL. N.L., Y.J., X.T., and V.S. were supported by the Data Intensive Research Enabling Clean Technology (DIRECT) National Science Foundation (NSF) National Research Traineeship (DGE-1633216), the State of Washington through the University of Washington (UW) Clean Energy Institute and the UW eScience Institute.
+The authors would like to thank Dr. Jenna (Bilbrey) Pope for reviewing the model and associated manuscript. C.D., B.E.M., S.A., and S.R.S. were supported by the Chemical Dynamics Initiative/Investment, under the Laboratory Directed Research and Development (LDRD) Program at Pacific Northwest National Laboratory (PNNL). PNNL is a multi-program national laboratory operated for the U.S. Department of Energy (DOE) by Battelle Memorial Institute under Contract No. DE-AC05-76RL01830. Experimental sample preparation was performed at the Environmental Molecular Sciences Laboratory (EMSL), a national scientific user facility sponsored by the Department of Energy's Office of Biological and Environmental Research and located at PNNL. EELS data was collected in the Radiological Microscopy Suite (RMS), located in the Radiochemical Processing Laboratory (RPL) at PNNL. N.L., Y.J., X.T., and V.S. were supported by the Data Intensive Research Enabling Clean Technology (DIRECT) National Science Foundation (NSF) National Research Traineeship (DGE-1633216), the State of Washington through the University of Washington (UW) Clean Energy Institute and the UW eScience Institute.
 
 Usage License
 ===
