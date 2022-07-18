@@ -10,7 +10,7 @@ This code is the result of a project for the University of Washington Industry C
 How to Use EELSTM
 =====
 
-The EELSTM model workflow encompasses four steps: Data Collection, Preprocessing, Training and Validation, and Inference, as described in our associated manuscript and shown in the figure below. In Step 1, a user must determine experimental setup and EELS data acquisition, including considerations for the best model performance. In Step 2, the user applies preprocessing strategies unique to EELS data, resulting from the data collection process, variability between experiments, and the nature of core loss data itself. In Step 3, the model is trained and validated, considering the relationship between training inputs and predictions, model transferability, and temporal correlations. In Step 4, possible error metrics are applied to benchmark performance relative to ground truth experimental data.
+The EELSTM model workflow encompasses four steps: Data Collection, Preprocessing, Training and Validation, and Inference, as described in our associated manuscript and shown in the figure below. In Step 1, a user must determine experimental setup and EELS data acquisition, including considerations for the best model performance. In Step 2, the user applies preprocessing strategies unique to EELS data, resulting from the data collection process, variability between experiments, and the nature of core loss data itself. In Step 3, the model is trained and validated, considering the relationship between training inputs and predictions, model transferability, and temporal correlations. In Step 4, possible error metrics are applied to benchmark performance relative to ground truth experimental data. There are a number of considerations to ensure you get the best results using this model, as described in our manuscript linked below.
 
 ![workflow](Docs/workflow.png)
 
@@ -52,8 +52,8 @@ Make sure your device could run the `PyTroch` and `Keras`
 ### Relaunch
 
 To reactivate environment:
-1. `source env/bin/activate` #if have mac
-2. `\path\to\env\Scripts\activate` #if have windows
+1. `source env/bin/activate` #if using mac
+2. `\path\to\env\Scripts\activate` #if using windows
 3. `cd to GUI folder`
 4. `python app.py`
 
@@ -64,7 +64,7 @@ To reactivate environment:
 Our graphical user interface (GUI) is based on Flask version == 2.0.1 and we integrated the EELSTM model functionality, in addition to interfacing with our existing few-shot machine learning code pyChip (https://github.com/pnnl/pychip_gui.)
 
 An overview image of the interface is shown below, encompassing four steps:
-![image](https://github.com/Yjin232/PNNL_LSTM_GROUP/blob/main/sample.png)
+![image](Docs/GUI.png)
 
 * Data Import: The GUI only accepts STEM spectrum data in *.dm4 format; the data file should contain a singal part and raw data time series.
 
