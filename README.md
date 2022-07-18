@@ -22,42 +22,39 @@ You need to either download our GUI project or jupyter notebook under `working n
 Installation
 ---
 
-For user familiar with the command line:
+For users familiar with the command line:
 
-### Download Git Repository
+### Download/Clone Git Repository
 
-1. `cd <replace with location of project folder>`
-2. `git clone https://github.com/Yjin232/PNNL_LSTM_GROUP.git`
-3. `cd GUI`
+    $cd <replace with desired location of project folder>
+    $git clone https://github.com/pnnl/EELSTM
+    $cd eelstm
 
 ### Create Environment
 
-For Mac users:
-1. `python3 -m venv env`
-2. `source env/bin/activate`
+    $conda create -n myenv
+    $conda activate myenv
 
-For Windows users:
-1. `virtualenv env`
-2. `\path\to\env\Scripts\activate`
+### Install required packages
 
-For Pycharm users:
-1. Open the project under the `GUI` root
-2. Click the `install the requirements.txt` button
+    $conda install pip
+    $pip install -r requirements.txt
 
-### Install Required Packages
-Make sure your device could run the `PyTroch` and `Keras`
-1. `cd GUI`
-2. `pip install -r requirements.txt`
+### Set up Jupyter Notebook Kernel
 
-### Relaunch
+    $pip install --user ipykernel
+    $python -m ipykernel install --user --name=myenv
 
-To reactivate environment:
-1. `source env/bin/activate` #if using mac
-2. `\path\to\env\Scripts\activate` #if using windows
-3. `cd to GUI folder`
-4. `python app.py`
+### Launch Jupyter Notebook
 
-- For ease of use a demo video has been included in the repository under `GUI Demo`
+    (in git bash or other conda environment)
+    $jupyter notebook
+
+### Launch GUI
+
+    (in terminal)
+    $cd path/to/GUI/folder
+    $python app.py
 
 ## Graphical User Interface
 
@@ -74,6 +71,12 @@ An overview image of the interface is shown below, encompassing four steps:
 * Forecast Display: The GUI then provides the final prediction graph which includes the forecast, input sequences, ground truth data (if available), and mean squared error (MSE).
 
 * Forecast History: The GUI also provides a learing history page to keep the track of the results of predictio. The user can select the `detail` button to download the results and `delete` button to delete the results.
+
+- For ease of use a demo video has been included in the repository under `GUI Demo`
+
+## Jupyter Notebooks
+
+The `.ipynb` notebooks located in the 'Working Notebook' directory walk the user through training the model and optimizing hyperparameters.
 
 ## Data
 
