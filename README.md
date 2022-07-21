@@ -85,7 +85,9 @@ The data used in our study is availble on Figshare at: https://doi.org/10.6084/m
 How to Cite
 ======
 
-If you would like to use this code, we request that you please cite our Arxiv preprint: X
+If you would like to use this code, we request that you please cite our preprint:
+
+ • Lewis, N.R., Jin, Y., Tang, X., Shah, V., Doty, C., Matthews, B.E., Akers, S., & Spurgeon, S.R. (2022). Forecasting of In Situ Electron Energy Loss Spectroscopy. Preprint @ https://doi.org/10.21203/rs.3.rs-1879307/v1
 
 To learn more about the application of few-shot ML to electron microscopy data, please consult our following publications:
 
